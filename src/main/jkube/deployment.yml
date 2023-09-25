@@ -14,3 +14,20 @@ spec:
           env:
           - name: SPRING_APPLICATION_JSON
             value: '{"server":{"undertow":{"io-threads":1, "worker-threads":2 }}}'
+          - name: DB_SERVICE_NAME
+            value: 'localhost'
+          - name: DATABASE_PORT
+            value: '5432'
+          - name: DATABASE_NAME
+            value: 'moss_db'
+          - name: DB_USER_NAME
+            value: 'postgres'
+          - name: DB_USER_PASSWORD
+            value: 'admin'
+          - name: POSTGRES_SSL
+            value: 'false'
+          - name: sslmode
+            value: 'allow'
+
+
+       
