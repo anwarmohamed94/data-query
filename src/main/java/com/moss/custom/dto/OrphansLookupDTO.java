@@ -9,6 +9,6 @@ public class OrphansLookupDTO {
 
 	private long id;
 	
-	private String name;
+	private String fullName;
 
 }

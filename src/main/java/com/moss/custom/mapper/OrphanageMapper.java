@@ -12,6 +12,11 @@ public interface OrphanageMapper {
 
 	OrphanageMapper MAPPER = Mappers.getMapper(OrphanageMapper.class);
 	
+//	@Mappings({
+//	    @Mapping(target = "group", constant = "headerSettings"),
+//	    @Mapping(target = "name", constant = "showLogo"),
+//	    @Mapping(target = "value", source = "headerSettings.showLogo")
+//	  })
 	OrphanageDto mapToOrphanageDto(Orphanage orphanage);
 	
 	OrphanagesLookupDTO mapToOrphanagesLookupDTO(Orphanage orphan);
