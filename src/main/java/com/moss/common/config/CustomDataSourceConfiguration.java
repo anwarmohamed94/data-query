@@ -50,7 +50,7 @@ public class CustomDataSourceConfiguration {
 
 		Map<String, String> customJpaProperties = new HashMap<>();
 		customJpaProperties.put("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
-		customJpaProperties.put("hibernate.hbm2ddl.auto", "validate");
+		customJpaProperties.put("hibernate.hbm2ddl.auto", "create");
 
 		return customEntityManagerFactoryBuilder.dataSource(customDataSource).packages("com.moss.custom.model")
 				.persistenceUnit("customDataSource").properties(customJpaProperties).build();
